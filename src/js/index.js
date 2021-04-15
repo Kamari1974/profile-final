@@ -33,14 +33,14 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Lucy Boilett</h1>
-          <h2>Web Developer</h2>
-          <h3>Miami, USA</h3>
+          <h1>Karen Aguilar</h1>
+          <h2>CPA</h2>
+          <h3>CARTAGO, COSTA RICA</h3>
           <ul class="position-right">
-            <li><a href="https://twitter.com/alesanchezr"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="https://github.com/alesanchezr"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://linkedin.com/alesanchezr"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/alesanchezr"><i class="fa fa-instagram"></i></a></li>
+            <li></i><a><i class="fa fa-instagram"></i></a></li>
+            <li><a href=><i class="fa fa-github"></i></a></li>
+            <li><a href=><i class="fa fa-linkedin"></i></a></li>
+            <li><a><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -54,14 +54,15 @@ window.onload = function() {
     // if includeCover is true the algorithm should
     includeCover: true,
     // this is the url of the image that will used as background for the profile cover
-    background: "https://images.unsplash.com/photo-1511974035430-5de47d3b95da",
+    background:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrTpf13xSUhYnCpWmmcdvRoEpASD95bf4jbQ&usqp=CAU",
     // this is the url for the profile avatar
-    avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
+    avatarURL: "https://avatars.githubusercontent.com/u/77865088?v=4",
     // social media bar position (left or right)
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: "alesanchezr",
+    github: null,
     linkedin: null,
     instagram: null,
     name: null,
