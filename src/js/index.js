@@ -33,14 +33,14 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>Karen Aguilar</h1>
-          <h2>CPA</h2>
-          <h3>CARTAGO, COSTA RICA</h3>
+          <h1>${variables.name} ${variables.lastname}</h1>
+          <h2>${variables.role}</h2>
+          <h3>${variables.city}, ${variables.country}</h3>
           <ul class="position-right">
-            <li></i><a><i class="fa fa-instagram"></i></a></li>
-            <li><a href=><i class="fa fa-github"></i></a></li>
-            <li><a href=><i class="fa fa-linkedin"></i></a></li>
-            <li><a><i class="fa fa-instagram"></i></a></li>
+            <li><a href=${variables.twitter}><i class="fa fa-twitter"></i></a></li>
+            <li><a href=${variables.github}><i class="fa fa-github"></i></a></li>
+            <li><a href=${variables.linkedin}><i class="fa fa-linkedin"></i></a></li>
+            <li><a href=${variables.instagram}><i class="fa fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
@@ -62,7 +62,7 @@ window.onload = function() {
     socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
-    github: null,
+    github: "kamari1974",
     linkedin: null,
     instagram: null,
     name: null,
